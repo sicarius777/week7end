@@ -12,19 +12,20 @@ const getWeatherData = async (city) => {
     }
 };
 
+// can't figure out why my images don't show up....... what am i missing or what did i mess up???
 const setBackgroundBasedOnWeather = (weatherCondition) => {
     const body = document.body;
     let backgroundImage;
 
     switch (weatherCondition.toLowerCase()) {
         case 'clear':
-            backgroundImage = 'url("clear.jpg")';
+            backgroundImage = 'url("https://media.istockphoto.com/id/1006507940/photo/looking-up-view-of-panoramic-modern-city-skyline-with-blue-sky-and-green-tree-in-shinjuku.jpg")';
             break;
         case 'clouds':
             backgroundImage = 'url("cloudy.jpg")';
             break;
         case 'rain':
-            backgroundImage = 'url("rainy.jpg")';
+            backgroundImage = 'url("https://st2.depositphotos.com/5647624/43701/i/450/depositphotos_437017794-stock-photo-moscow-night-rain-drops-glass.jpg")';
             break;
         default:
             backgroundImage = 'url("default.jpg")';
